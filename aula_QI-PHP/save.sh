@@ -1,10 +1,21 @@
 #!/bin/sh
 
-while [ true ]
+while [ true ];
 do
-    sleep 1
+    echo '|'
+    sleep 0.5
+    clear
+    echo '/'
+    sleep 0.5
+    clear
+    echo '--'
+    sleep 0.5
     cp -r /home/ereck/aula_QI-PHP/* /opt/lampp/htdocs/aula_QI-PHP 
-    sleep 1
-    echo 'ok'
+    clear
+    echo '\'
+    sleep 0.5
+    clear
+    echo '|'
+    sleep 0.5
+    clear
 done
-s
