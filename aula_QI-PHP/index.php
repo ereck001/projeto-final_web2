@@ -1,3 +1,5 @@
+include 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,13 +15,32 @@
     <div id="marcarHorario">
         <form id='formulario' onclick="marcarH()" action="">
             
-            <figure>
-                <img src="img/logo_sem-fundo.png" id = 'logoCad' alt="logo">
-            </figure>
+            
+            <img src="img/logo_sem-fundo.png" id = 'logoCad' alt="logo">
+            
             <section id = 'separador'>
 
-                <label for="">Nome:  <input type="text"></label>
-                <label for="">Horário:  <input type="date"></label>
+                
+                <form name="Cadastro" action="cadastrar.php" method="POST">
+                    <label>Nome: 
+                        <input type="text" name="nome" size="30"><br>
+                    </label>
+                    <label>Idade:
+                    <input type="number" name="idade" size="45"><br>
+                    </label>
+                    <label>Horário:
+                        <input type="date" name="horario" size="45"><br>
+                    </label> 
+                    <label>Sexo:
+                    <select name="sexo">
+                    </label>    
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="N">Não Declarado</option>
+                    </select><br>
+                    
+                    <input type="submit" name="enviar" id="btn-submit" value="Enviar">
+                </form>
             
             </section>
             

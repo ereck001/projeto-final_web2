@@ -21,7 +21,7 @@ a{
     visibility: hidden;
     display: flex;
     justify-content: center;
-    padding-top: 100px;
+    padding-top: 40px;
 
 }
 #fecharHorario{
@@ -37,7 +37,8 @@ a{
     font-weight: bold;
 }
 #formulario{
-    height: 350px;
+    padding-top: 5px;
+    height: 450px;
     width: 350px;
     border-radius: 0.7em;
     background-color: #fff;
@@ -47,9 +48,10 @@ a{
     align-items: center;
     
 }
+
 #separador{
     
-    height: 80px;
+    height: 80%;
     width: 68%;
     display: flex;
     flex-direction: column;
@@ -61,14 +63,17 @@ a{
    margin:10px;
    
 }
-#formulario label input{
+#formulario label input,select{
     width: 150px;
     height: 25px;
  }
 #logoCad{
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
 
+}
+#btn-submit{
+    margin-top: 20px;
 }
 
 header{
