@@ -12,7 +12,49 @@ a{
     color: #000;
     
 }
-#marcarHorario{
+#cad-box{
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#cad-box  label input{
+    margin: 10px;
+    height: 20px;
+    width: 150px;
+   
+}
+#nome{
+    width:250px ;
+}
+#campo-btn{
+    
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+#btn-submit{
+    border: none;
+    border-radius: 0.3em;
+    background-color: rgb(56, 56, 56);
+    color: #fff;
+    height:40px ;
+    width: 70px;
+
+}
+
+#btn-submit:hover{
+    
+    background-color: silver;
+    color: rgb(56, 56, 56);
+    height:43px ;
+    width: 75px;
+}
+
+/*#marcarHorario{
     position: absolute;
     height: 200%;
     width: 100%;
@@ -35,7 +77,7 @@ a{
 #fecharHorario p{
     color:#fff;
     font-weight: bold;
-}
+}*/
 #formulario{
     padding-top: 5px;
     height: 450px;

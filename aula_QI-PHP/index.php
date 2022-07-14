@@ -12,7 +12,7 @@
     <title>Salão Marcos e Homero</title>
 </head>
 <body id="body" onload="trocarImg()">
-    <div id="marcarHorario">
+    <!--<div id="marcarHorario">
         <form id='formulario' onclick="marcarH()" action="">
             
             
@@ -21,7 +21,7 @@
             <section id = 'separador'>
 
                 
-                <form name="Cadastro" action="cadastrar.php" method="POST">
+                <form name="Cadastro" action="../controller/cliente.controller.php" method="POST">
                     <label>Nome: 
                         <input type="text" name="nome" size="30"><br>
                     </label>
@@ -29,14 +29,16 @@
                     <input type="number" name="idade" size="45"><br>
                     </label>
                     <label>Horário:
-                        <input type="date" name="horario" size="45"><br>
+                        <input type="time" name="horario" size="45"><br>
+                    </label> 
+                    <label>Dia:
+                        <input type="date" name="dia" size="45"><br>
                     </label> 
                     <label>Sexo:
                     <select name="sexo">
                     </label>    
                         <option value="M">Masculino</option>
-                        <option value="F">Feminino</option>
-                        <option value="N">Não Declarado</option>
+                        <option value="F">Feminino</option>                       
                     </select><br>
                     
                     <input type="submit" name="enviar" id="btn-submit" value="Enviar">
@@ -45,8 +47,8 @@
             </section>
             
         </form>
-        <button id = 'fecharHorario' onclick="fecharH()"><p>X</p></button>
-    </div>
+       <button id = 'fecharHorario' onclick="fecharH()"><p>X</p></button>
+    </div>-->
     <header>
         <figure id = "logo"></figure>
         <nav id="menu-principal">
@@ -58,7 +60,7 @@
                 <a href="#"><li>Home</li></a>
                 <a href="#historia"><li>Quem Somos</li></a>
                 <a href="#mapa"><li>Localização</li></a>
-                <a href="#marcarHorario" onclick="marcarH()"><li >Marcar horário</li></a>
+                <a href="view/clienteCadastro.php" ><li >Marcar horário</li></a><!--onclick="marcarH()"-->
                 <a href="#redes-sociais"><li>Contato</li></a>                
             </ul>
         </nav>

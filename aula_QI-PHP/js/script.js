@@ -23,7 +23,7 @@ function trocarImg() {
 
     setInterval(imgUM, 15000);   
 }
-function marcarH(){
+/*function marcarH(){
    
    document.getElementById('marcarHorario').style='visibility:visible;'
    document.getElementById('body').style='overflow:hidden;'
@@ -32,4 +32,4 @@ function fecharH(){
    
     document.getElementById('marcarHorario').style='visibility:hidden;'
     document.getElementById('body').style='overflow:unset;'
-}
+}*/
