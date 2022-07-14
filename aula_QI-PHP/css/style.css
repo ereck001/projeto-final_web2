@@ -352,14 +352,15 @@ footer{
 @media(min-width:340px){
     #imagem{
         width: 350px;
-        height: 400px;
+        height: 200px;
     }
 }
 @media(min-width:380px){
     #imagem{
         width: 380px;
-        height: 400px;
+        height: 200px;
     }
+
 }
 @media(min-width:650px){
     main{
