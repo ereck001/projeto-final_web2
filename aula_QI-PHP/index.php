@@ -37,7 +37,7 @@
                     <label>Sexo:
                     <select name="sexo">
                     </label>    
-                        <option value="M">Masculino</option>
+                        <option value="">Masculino</option>
                         <option value="F">Feminino</option>                       
                     </select><br>
                     

@@ -28,8 +28,8 @@
             <label>Sexo:
             <select name="sexo">
                
-                <option value="M">Masculino</option>
-                <option value="F">Feminino</option>                       
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>                       
             </select><br>
             </label> 
             <section id="campo-btn">
