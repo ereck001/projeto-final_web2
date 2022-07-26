@@ -10,17 +10,11 @@
     $cliente ->setSexo($_POST['sexo']);
     $cliente ->setHorario($_POST['horario']);
     $cliente ->setDia($_POST['dia']);
-
-    $nome = $cliente ->getNome();
-    $idade = $cliente ->getIdade();
-    $sexo = $cliente ->getSexo();
-    $horario = $cliente ->getHorario();
-    $dia = $cliente ->getDia();
     
     try{
-        $strcon = mysqli_connect('db','root','root','projphp') or die('Erro ao conectar ao banco de dados');        
-        $sql = "INSERT INTO clientehora(nome,idade,sexo,horario,dia) VALUES ('{$nome}',{$idade}, '{$sexo}','{$horario}','{$dia}');"; 
-         
+        $strcon = mysqli_connect('localhost','php_user','N803hj&o','projphp') or die('Erro ao conectar ao banco de dados');
+        $sql = "INSERT INTO clientehora(nome,idade,sexo) VALUES ";
+        $sql .= "('$cliente ->getNome', '$cliente ->getIdade', '$cliente ->getSexo')"; 
         mysqli_query($strcon,$sql) or die("Erro ao tentar cadastrar registro");
         mysqli_close($strcon);
 
